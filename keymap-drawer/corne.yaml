@@ -1,189 +1,90 @@
 layout: {zmk_keyboard: corne}
 layers:
-  base:
+  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LGUI, lower, SPACE, RET,
+    raise, RALT]
+  lower:
   - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSPC
-  - LCTRL
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LSHFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ESC, h: func}
-  - LALT
-  - LGUI
-  - {t: SPACE, h: num}
-  - ENTER
-  - sym
-  - func
-  num:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - 'Sft+:'
-  - BACKSPACE
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
-  - Sft++
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
   - '1'
   - '2'
   - '3'
-  - Sft+*
-  - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  sym:
-  - '~'
-  - (
-  - ':'
-  - '='
-  - )
-  - '&'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - BACKSPACE
-  - '`'
-  - '{'
-  - '-'
-  - +
-  - '}'
-  - '|'
-  - ^
-  - '&'
-  - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - '['
-  - '*'
-  - /
-  - ']'
-  - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  func:
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - OUT BLE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PRINTSCREEN
-  - DEL
-  - {t: ▽, type: trans}
-  - VOL DN
-  - VOLUME UP
-  - MUTE
-  - {t: ▽, type: trans}
-  - OUT USB
-  - LEFT ARROW
+  - {t: BT, h: '4'}
+  - LEFT
   - DOWN
-  - UP ARROW
+  - UP
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LGUI
   - {type: held}
+  - SPACE
+  - RET
+  - {t: ▽, type: trans}
+  - RALT
+  raise:
+  - TAB
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - BSPC
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - LSHFT
   - {t: ▽, type: trans}
-combos:
-- p: [4, 5]
-  k: (
-- p: [16, 17]
-  k: '{'
-- p: [28, 29]
-  k: '['
-- p: [6, 7]
-  k: )
-- p: [18, 19]
-  k: '}'
-- p: [30, 31]
-  k: ']'
-- p: [19, 20]
-  k: ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - LGUI
+  - {t: ▽, type: trans}
+  - SPACE
+  - RET
+  - {type: held}
+  - RALT
